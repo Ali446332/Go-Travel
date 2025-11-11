@@ -42,6 +42,7 @@ $(document).on('click', '.btn-logout', function() {
   alert("You have been logged out successfully!");
 
   // Redirect to login page
-  window.location.href = "Home.html";
+  window.location.href = "index.html";
 
 });
+
