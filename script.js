@@ -6,7 +6,7 @@ $(document).ready(function(){
     let pass = $('#password').val().trim();
     if(!user || !pass){ alert('Enter username and password'); return; }
     sessionStorage.setItem('loggedUser', user);
-    window.location.href = 'home.html';
+    window.location.href = 'Home.html';
   });
 
   // Booking Form
@@ -30,7 +30,7 @@ $(document).ready(function(){
   // Logout
   $('.btn-logout').click(function(){
     sessionStorage.clear();
-    window.location.href = 'Login.html';
+    window.location.href = 'index.html';
   });
 });
 $(document).on('click', '.btn-logout', function() {
@@ -42,5 +42,6 @@ $(document).on('click', '.btn-logout', function() {
   alert("You have been logged out successfully!");
 
   // Redirect to login page
-  window.location.href = "Login.html";
+  window.location.href = "Home.html";
+
 });
